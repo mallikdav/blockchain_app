@@ -1,0 +1,23 @@
+/**
+ * Coosta Property Indexing Model definition.
+ */
+namespace org.acme.sample
+
+asset Property identified by propertyId {
+  o String propertyId
+  o String addresss
+  o String city
+  o String state
+  o String country
+}
+
+participant CoostaUser identified by coostaUserId {
+  o String coostaUserId
+  o String firstName
+  o String lastName
+}
+
+transaction Titlement {
+  --> Property property
+  --> CoostaUser newOwner
+}
