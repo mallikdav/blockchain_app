@@ -1,7 +1,7 @@
 /**
  * Coosta Property Indexing Model definition.
  */
-namespace org.acme.sample
+namespace org.acme.mynetwork
 
 asset Property identified by propertyId {
   o String propertyId
