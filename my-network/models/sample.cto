@@ -9,6 +9,7 @@ asset Property identified by propertyId {
   o String city
   o String state
   o String country
+  --> CoostaUser owner
 }
 
 participant CoostaUser identified by coostaUserId {
