@@ -3,12 +3,22 @@
  */
 namespace org.acme.mynetwork
 
-asset Property identified by propertyId {
-  o String propertyId
+asset Property identified by bun {
+  o String bun
+  o String apn
   o String addresss
   o String city
   o String state
+  o String county
   o String country
+  o String bed
+  o String bath
+  o String sqft
+  o String lotSize
+  o String price
+  o String taxLand
+  o String taxBuilding
+  o String taxAssesment
   --> CoostaUser owner
 }
 
