@@ -1,0 +1,12 @@
+query selectProperties {
+  description: "Select all Properties"
+  statement:
+      SELECT org.acme.mynetwork.Property
+}
+
+query selectPropertiesByCity {
+  description: "Select all Properties by City"
+  statement:
+      SELECT org.acme.mynetwork.Property
+          WHERE (city==_$city)
+}
