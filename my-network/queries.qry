@@ -8,8 +8,8 @@ query selectPropertiesByFilter {
   description: "Select all Properties by City"
   statement:
       SELECT org.acme.mynetwork.Property
-          WHERE (city==_$filter OR apn==_$filter
-                 OR state==_$filter OR county==_$filter) 
+          WHERE (city==_$city OR apn==_$apn
+                 OR state==_$state OR county==_$county) 
   		    LIMIT _$limit
           SKIP _$skip
 }
