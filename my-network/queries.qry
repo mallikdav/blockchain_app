@@ -4,9 +4,12 @@ query selectProperties {
       SELECT org.acme.mynetwork.Property
 }
 
-query selectPropertiesByCity {
+query selectPropertiesByFilter {
   description: "Select all Properties by City"
   statement:
       SELECT org.acme.mynetwork.Property
-          WHERE (city==_$city)
+          WHERE (city==_$filter OR apn==_$filter
+                 OR state==_$filter OR county==_$filter) 
+  		    LIMIT _$limit
+          SKIP _$skip
 }
